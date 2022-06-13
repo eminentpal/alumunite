@@ -14,14 +14,482 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+
 .siderbar {
   background-color: #ffffff;
   width: 300px;
-  height: 800px;
+  height: 950px;
+  padding: 40px 25px;
 }
 
 .form {
   background-color: #f7fbfe;
   width: 700px;
-  
+  height: 950px;
+}
+
+.account {
+  margin-top: 50px;
+
+  width: 100%;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.login i {
+  color: #0084e3;
+  font-size: 14px;
+}
+.login h5 {
+  margin-left: 5px;
+}
+.account-info {
+  margin-top: 30px;
+  margin-left: 17px;
+}
+
+.c-data {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 30px;
+}
+.c-data h5 {
+  margin-left: 10px;
+  color: #aaa;
+}
+
+.c-data i {
+  color: #71c621;
+  font-size: 18px;
+}
+
+.c-alum {
+  display: flex;
+  margin-top: 30px;
+}
+
+.c-alum-content {
+  padding-left: 10px;
+  line-height: 1;
+}
+
+.c-alum span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #2294e6;
+  color: #2294e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.c-alum p {
+  margin-top: 10px;
+  font-size: 11.2px;
+  color: #aaa;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.side-img {
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+}
+
+.side-img img {
+  width: 250px;
+  aspect-ratio: 3/4;
+}
+
+.form {
+  padding: 135px 10px 30px 80px;
+}
+
+.box-1 {
+  width: 330px;
+  height: auto;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(219, 214, 214);
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(46, 45, 45);
+  font-weight: bold;
+}
+.input-1 {
+  width: 330px;
+  height: 150px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-1 p {
+  font-size: 13px;
+  text-align: right;
+  color: grey;
+  font-weight: bold;
+}
+
+.input-1 span:nth-child(1) {
+  color: #0084e3;
+
+  font-weight: bold;
+}
+
+.input-1 label {
+  font-size: 13px;
+  color: grey;
+  font-weight: bold;
+}
+
+.select select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  border: 1px solid grey;
+  color: grey;
+
+  background-image: none;
+  cursor: pointer;
+}
+
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 2.4em;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.7em;
+  color: #0084e3;
+
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+.select input {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  border: 0;
+  background-image: none;
+  cursor: pointer;
+  color: grey;
+  font-weight: bold;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calender-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* input[type="date"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-size: 18px;
+  font-family: "FontAwesome";
+  content: "\f073";
+
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  right: 6px;
+  color: #999;
+} */
+
+/* input[type="date"] {
+  display: none;
+} */
+
+.input-1 span:nth-child(4) {
+  font-size: 13px;
+}
+/*checkbox style*/
+
+.check-1 input[type="checkbox"] + label {
+  display: block;
+  margin: 0.2em;
+  padding: 0.2em;
+}
+
+.check-1 input[type="checkbox"] {
+  display: none;
+}
+
+.check-1 input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 1px solid grey;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  padding-left: 0.2em;
+  margin-right: 0.2em;
+  border-radius: 50%;
+  padding-bottom: 0.3em;
+  vertical-align: center;
+  color: transparent;
+  transition: 0.2s;
+}
+
+.check-1 input[type="checkbox"] + label:active:before {
+  transform: scale(0);
+}
+
+.check-1 input[type="checkbox"]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+.check-1 input[type="checkbox"]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+.check-1 input[type="checkbox"]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+/*second checkbox*/
+.check-2 input[type="checkbox"] + label {
+  display: block;
+  margin: 0.2em;
+  padding: 0.2em;
+}
+
+.check-2 input[type="checkbox"] {
+  display: none;
+}
+
+.check-2 input[type="checkbox"] + label:before {
+  content: "\2714";
+  border: 1px solid grey;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  padding-left: 0.2em;
+  margin-right: 0.2em;
+  border-radius: 50%;
+  padding-bottom: 0.3em;
+  vertical-align: center;
+  color: transparent;
+  transition: 0.2s;
+}
+
+.check-2 input[type="checkbox"] + label:active:before {
+  transform: scale(0);
+}
+
+.check-2 input[type="checkbox"]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+.check-2 input[type="checkbox"]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+.check-2 input[type="checkbox"]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+/* calender*/
+.input-2 {
+  width: 330px;
+  height: 70px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: grey;
+  font-weight: bold;
+}
+
+.input-2 label {
+  font-size: 13px;
+}
+.calender {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 2.4em;
+
+  overflow: hidden;
+}
+
+.calender input {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  border: 1px solid grey;
+  color: grey;
+  font-weight: bold;
+  background-image: none;
+  cursor: pointer;
+}
+input[type="date"] {
+  display: block;
+  position: relative;
+  /* 
+  border: 1px solid #8292a2; */
+  border-radius: 0.25rem;
+  background: white
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 22'%3E%3Cg fill='none' fill-rule='grey' stroke='grey' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' transform='translate(1 1)'%3E%3Crect width='18' height='18' y='2' rx='2'/%3E%3Cpath d='M13 0L13 4M5 0L5 4M0 8L18 8'/%3E%3C/g%3E%3C/svg%3E")
+    right 1rem center no-repeat;
+
+  cursor: pointer;
+}
+input[type="date"]:focus {
+  outline: none;
+  border-color: #3acfff;
+  box-shadow: 0 0 0 0.25rem rgba(0, 120, 250, 0.1);
+}
+
+::-webkit-datetime-edit {
+}
+::-webkit-datetime-edit-fields-wrapper {
+}
+::-webkit-datetime-edit-month-field:hover,
+::-webkit-datetime-edit-day-field:hover,
+::-webkit-datetime-edit-year-field:hover {
+  background: rgba(0, 120, 250, 0.1);
+}
+
+::-webkit-clear-button,
+::-webkit-inner-spin-button {
+  display: none;
+}
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  width: 2.5rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  opacity: 0;
+  cursor: pointer;
+
+  color: rgba(0, 120, 250, 1);
+  background: rgba(0, 120, 250, 1);
+}
+
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 0.05;
+}
+input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
+  opacity: 0.15;
+}
+
+/*styling submit container*/
+
+.submit-box {
+  width: 330px;
+  height: auto;
+}
+
+.submit-button button {
+  float: right;
+  width: 150px;
+  height: 30px;
+  border: 0;
+  background-color: #0084e3;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.school-box {
+  width: 330px;
+  height: 70px;
+  background-color: #ebf5fd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.add-school {
+  width: 230px;
+  height: 60px;
+  background-color: #ebf5fd;
+  display: flex;
+  align-items: center;
+}
+
+.add-school .fa {
+  margin-right: 15px;
+  font-size: 30px;
+  color: #0084e3;
+}
+.school-box .fa {
+  font-size: 30px;
+  color: #0084e3;
+}
+
+.add-school p {
+  font-size: 10px;
+  color: #aaa;
+}
+
+.add-school span {
+  font-weight: 500;
+  font-size: 13px;
+  color: #0084e3;
 }
